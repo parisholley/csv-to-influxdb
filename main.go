@@ -229,7 +229,7 @@ func main() {
 					continue
 				}
 				fields[h] = t
-			} else if !config.ForceFloat && integerRe.MatchString(r) {
+			} else if !conf.ForceFloat && integerRe.MatchString(r) {
 				i, _ := strconv.Atoi(r)
 				fields[h] = i
 			} else if floatRe.MatchString(r) {
